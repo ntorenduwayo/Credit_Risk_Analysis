@@ -117,3 +117,8 @@ However, due to the dataset class imbalance, **accuracy score** alone could not 
 The low-risk loan’s **F-1 scores** for both the EasyEnsembleClassifier and BalancedRandomForestClassifier models were good (0.97, and 0.95 respectively) in comparison to all other models, but their high-risk loan’s F-1 scores were very low i.e., inadequate (0.14 and 0.07 respectively) even though they were improved compared to the other models.</br>
 In the light of these results, all the models were weak in determining the high-risk loans. Both the EasyEnsembleClassifier and BalancedRandomForestClassifier models produced good improvements, especially the EasyEnsembleClassifier model. However, they had a high-risk loan low precision score meaning that a lot of low-risk loans would be falsely classified as high-risk loans which would adversely impact the bank’s loan strategy by missing good opportunities to increase revenues and business. </br>
 Therefore, I would not recommend any of these models to the bank to predict the loan risk.
+
+## Resources
+[1. Random Forest documentation](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html)
+[2. Easy Ensemble documentation](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html)
+[3. Classificaton Score documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html)
